@@ -4,138 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearSpan = document.getElementById('year');
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-    // ================= 2. PRODUCT DATA (Sahi 13 Products) =================
+    // ================= 2. PRODUCT DATA =================
     const products = [
-        // 1. 6" Wide Joint Knife
-        {
-            id: 1,
-            name: '6" Wide Joint Knife',
-            code: '#1002',
-            price: '₹28',
-            desc: '',
-            image: 'images/image2.jpg',
-            category: 'knife'
-        },
-        // 2. 12" Wide Joint Knife
-        {
-            id: 2,
-            name: '12" Wide Joint Knife',
-            code: '#1004',
-            price: '₹42',
-            desc: '',
-            image: 'images/image3.jpg',
-            category: 'knife'
-        },
-        // 3. 3" Wide Scraper
-        {
-            id: 3,
-            name: '3" Wide Scraper',
-            code: '#1003',
-            price: '₹12',
-            desc: '',
-            image: 'images/image4.jpg',
-            category: 'scraper'
-        },
-        // 4. 8" Wide Joint Knife
-        {
-            id: 4,
-            name: '8" Wide Joint Knife',
-            code: '#1061',
-            price: '₹32',
-            desc: '',
-            image: 'images/image5.jpg',
-            category: 'knife'
-        },
-        // 5. Saw-Tooth Adhesive Trowel
-        {
-            id: 5,
-            name: 'Saw-Tooth Adhesive Trowel (12")',
-            code: '',
-            price: '₹110',
-            desc: 'Precise & Fast Application',
-            image: 'images/image6.jpg',
-            category: 'trowel'
-        },
-        // 6. Notched Adhesive Trowel
-        {
-            id: 6,
-            name: 'Notched Adhesive Trowel (12")',
-            code: '',
-            price: '₹35',
-            desc: 'Uniform Coverage',
-            image: 'images/image7.jpg',
-            category: 'trowel'
-        },
-        // 7. Plastic/ABS Float
-        {
-            id: 7,
-            name: 'Plastic/ABS Float (10")',
-            code: '',
-            price: '₹37',
-            desc: 'Final Concrete Smooth Finish',
-            image: 'images/image8.jpg',
-            category: 'float'
-        },
-        // 8. Drywall Sander
-        {
-            id: 8,
-            name: 'Drywall Sander (6")',
-            code: '',
-            price: '₹35',
-            desc: 'Efficient & Dust-Controlled',
-            image: 'images/image9.jpg',
-            category: 'float'
-        },
-        // 9. Adjustable Frame (Offset)
-        {
-            id: 9,
-            name: 'Adjustable Frame (Offset)',
-            code: '',
-            price: '₹6',
-            desc: '',
-            image: 'images/image10.jpg',
-            category: 'roller'
-        },
-        // 10. Putty Knife 8" (image11.jpg se)
-        {
-            id: 10,
-            name: 'Putty Knife 8"',
-            code: '',
-            price: '₹28',
-            desc: 'SIZE: 8"',
-            image: 'images/image11.jpg', // <-- 8" wali image
-            category: 'knife'
-        },
-        // 11. Putty Knife 6" (image12.jpg se - clean image)
-        {
-            id: 11,
-            name: 'Putty Knife 6"',
-            code: '',
-            price: '₹25',
-            desc: 'SIZE: 6"',
-            image: 'images/image12.jpg', // <-- 6" wali clean image
-            category: 'knife'
-        },
-        // 12. Standard Roller Frame 4" (image13.jpg se)
-        {
-            id: 12,
-            name: 'Standard Roller Frame 4"',
-            code: '',
-            price: '₹7',
-            desc: 'Roller Frame Set',
-            image: 'images/image13.jpg',
-            category: 'roller'
-        },
-        // 13. Standard Roller Frame 2" (image15.jpg se)
-        {
-            id: 13,
-            name: 'Standard Roller Frame 2"',
-            code: '',
-            price: '₹6.75',
-            desc: 'Roller Frame Set',
-            image: 'images/image15.jpg',
-            category: 'roller'
-        }
+        { id: 1, name: '6" Wide Joint Knife', code: '#1002', price: '₹28', desc: '', image: 'images/image2.jpg', category: 'knife' },
+        { id: 2, name: '12" Wide Joint Knife', code: '#1004', price: '₹42', desc: '', image: 'images/image3.jpg', category: 'knife' },
+        { id: 3, name: '3" Wide Scraper', code: '#1003', price: '₹12', desc: '', image: 'images/image4.jpg', category: 'scraper' },
+        { id: 4, name: '8" Wide Joint Knife', code: '#1061', price: '₹32', desc: '', image: 'images/image5.jpg', category: 'knife' },
+        { id: 5, name: 'Saw-Tooth Adhesive Trowel (12")', code: '', price: '₹110', desc: 'Precise & Fast Application', image: 'images/image6.jpg', category: 'trowel' },
+        { id: 6, name: 'Notched Adhesive Trowel (12")', code: '', price: '₹35', desc: 'Uniform Coverage', image: 'images/image7.jpg', category: 'trowel' },
+        { id: 7, name: 'Plastic/ABS Float (10")', code: '', price: '₹37', desc: 'Final Concrete Smooth Finish', image: 'images/image8.jpg', category: 'float' },
+        { id: 8, name: 'Drywall Sander (6")', code: '', price: '₹35', desc: 'Efficient & Dust-Controlled', image: 'images/image9.jpg', category: 'float' },
+        { id: 9, name: 'Adjustable Frame (Offset)', code: '', price: '₹6', desc: '', image: 'images/image10.jpg', category: 'roller' },
+        { id: 10, name: 'Putty Knife 8"', code: '', price: '₹28', desc: 'SIZE: 8"', image: 'images/image11.jpg', category: 'knife' },
+        { id: 11, name: 'Putty Knife 6"', code: '', price: '₹25', desc: 'SIZE: 6"', image: 'images/image12.jpg', category: 'knife' },
+        { id: 12, name: 'Standard Roller Frame 4"', code: '', price: '₹7', desc: 'Roller Frame Set', image: 'images/image13.jpg', category: 'roller' },
+        { id: 13, name: 'Standard Roller Frame 2"', code: '', price: '₹6.75', desc: 'Roller Frame Set', image: 'images/image15.jpg', category: 'roller' }
     ];
 
     // ================= 3. RENDER PRODUCT GRID =================
@@ -152,13 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
         list.forEach(product => {
             const card = document.createElement('div');
             card.className = 'product-card';
+            card.setAttribute('data-id', product.id);
             card.innerHTML = `
                 <div class="product-img-wrap">
                     <img src="${product.image}" 
                          alt="${product.name}" 
-                         class="product-img ${product.imageClass || ''}"
+                         class="product-img"
                          loading="lazy" 
-                         onerror="this.src='https://via.placeholder.com/260x200?text=Image+Not+Found'">
+                         onerror="this.style.display='none'">
                 </div>
                 <h3>${product.name}</h3>
                 ${product.code ? `<p class="product-code">${product.code}</p>` : ''}
@@ -166,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${product.desc ? `<p class="desc">${product.desc}</p>` : ''}
                 <a href="tel:9873123689" class="btn btn-enquire">Enquire Now</a>
             `;
+            card.addEventListener('click', (e) => {
+                if (e.target.tagName !== 'A') openModal(product);
+            });
             productGrid.appendChild(card);
         });
     }
@@ -185,12 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
         slideCard.className = 'slider-card';
         slideCard.innerHTML = `
             <div class="product-img-wrap">
-                <img src="${product.image}" alt="${product.name}" 
-                     class="product-img ${product.imageClass || ''}" loading="lazy">
+                <img src="${product.image}" alt="${product.name}" class="product-img" loading="lazy">
             </div>
             <h4>${product.name}</h4>
             <p class="slider-price">${product.price}</p>
         `;
+        slideCard.addEventListener('click', () => openModal(product));
         sliderTrack.appendChild(slideCard);
     });
 
@@ -264,7 +151,50 @@ document.addEventListener('DOMContentLoaded', () => {
     if (searchInput) searchInput.addEventListener('input', filterProducts);
     if (categoryFilter) categoryFilter.addEventListener('change', filterProducts);
 
-    // ================= 6. MOBILE NAV, SMOOTH SCROLL, HEADER, BACK TO TOP =================
+    // ================= 6. PRODUCT DETAIL MODAL =================
+    const modal = document.getElementById('productModal');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalClose = document.getElementById('modalClose');
+    const modalImage = document.getElementById('modalImage');
+    const modalName = document.getElementById('modalName');
+    const modalCode = document.getElementById('modalCode');
+    const modalPrice = document.getElementById('modalPrice');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalCall = document.getElementById('modalCall');
+    const modalWhatsapp = document.getElementById('modalWhatsapp');
+
+    function openModal(product) {
+        modalImage.src = product.image;
+        modalImage.alt = product.name;
+        modalName.textContent = product.name;
+        modalCode.textContent = product.code || '';
+        modalCode.style.display = product.code ? 'inline-block' : 'none';
+        modalPrice.textContent = product.price;
+        modalDesc.textContent = product.desc || '';
+        modalDesc.style.display = product.desc ? 'block' : 'none';
+
+        const waMessage = encodeURIComponent(
+            `Hello Z.A. Tools,\n\nI want to enquire about:\n*Product:* ${product.name}\n${product.code ? `*Code:* ${product.code}\n` : ''}*Price:* ${product.price}\n\nPlease share more details.`
+        );
+        modalWhatsapp.href = `https://wa.me/919873123689?text=${waMessage}`;
+        modalCall.href = 'tel:9873123689';
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (modalClose) modalClose.addEventListener('click', closeModal);
+    if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    // ================= 7. MOBILE NAV, SMOOTH SCROLL, HEADER, BACK TO TOP =================
     const mobileToggle = document.getElementById('mobile-toggle');
     const navMenu = document.getElementById('nav-menu');
     if (mobileToggle && navMenu) mobileToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
@@ -288,11 +218,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // ================= 7. IMAGE ERROR HANDLING =================
-    document.querySelectorAll('img').forEach(img => {
-        img.addEventListener('error', function () {
-            this.style.background = '#f0f0f0';
-            this.alt = 'Image Not Available';
-        });
-    });
 });
