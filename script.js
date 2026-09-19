@@ -4,21 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearSpan = document.getElementById('year');
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-    // ================= 2. PRODUCT DATA =================
+    // ================= 2. PRODUCT DATA (Path Fixed - No "images/" prefix) =================
     const products = [
-        { id: 1, name: '6" Wide Joint Knife', code: '#1002', price: '₹28', desc: '', image: 'images/image2.jpg', category: 'knife' },
-        { id: 2, name: '12" Wide Joint Knife', code: '#1004', price: '₹42', desc: '', image: 'images/image3.jpg', category: 'knife' },
-        { id: 3, name: '3" Wide Scraper', code: '#1003', price: '₹12', desc: '', image: 'images/image4.jpg', category: 'scraper' },
-        { id: 4, name: '8" Wide Joint Knife', code: '#1061', price: '₹32', desc: '', image: 'images/image5.jpg', category: 'knife' },
-        { id: 5, name: 'Saw-Tooth Adhesive Trowel (12")', code: '', price: '₹110', desc: 'Precise & Fast Application', image: 'images/image6.jpg', category: 'trowel' },
-        { id: 6, name: 'Notched Adhesive Trowel (12")', code: '', price: '₹35', desc: 'Uniform Coverage', image: 'images/image7.jpg', category: 'trowel' },
-        { id: 7, name: 'Plastic/ABS Float (10")', code: '', price: '₹37', desc: 'Final Concrete Smooth Finish', image: 'images/image8.jpg', category: 'float' },
-        { id: 8, name: 'Drywall Sander (6")', code: '', price: '₹35', desc: 'Efficient & Dust-Controlled', image: 'images/image9.jpg', category: 'float' },
-        { id: 9, name: 'Adjustable Frame (Offset)', code: '', price: '₹6', desc: '', image: 'images/image10.jpg', category: 'roller' },
-        { id: 10, name: 'Putty Knife 8"', code: '', price: '₹28', desc: 'SIZE: 8"', image: 'images/image11.jpg', category: 'knife' },
-        { id: 11, name: 'Putty Knife 6"', code: '', price: '₹25', desc: 'SIZE: 6"', image: 'images/image12.jpg', category: 'knife' },
-        { id: 12, name: 'Standard Roller Frame 4"', code: '', price: '₹7', desc: 'Roller Frame Set', image: 'images/image13.jpg', category: 'roller' },
-        { id: 13, name: 'Standard Roller Frame 2"', code: '', price: '₹6.75', desc: 'Roller Frame Set', image: 'images/image15.jpg', category: 'roller' }
+        { id: 1, name: '6" Wide Joint Knife', code: '#1002', price: '₹28', desc: '', image: 'image2.jpg', category: 'knife' },
+        { id: 2, name: '12" Wide Joint Knife', code: '#1004', price: '₹42', desc: '', image: 'image3.jpg', category: 'knife' },
+        { id: 3, name: '3" Wide Scraper', code: '#1003', price: '₹12', desc: '', image: 'image4.jpg', category: 'scraper' },
+        { id: 4, name: '8" Wide Joint Knife', code: '#1061', price: '₹32', desc: '', image: 'image5.jpg', category: 'knife' },
+        { id: 5, name: 'Saw-Tooth Adhesive Trowel (12")', code: '', price: '₹110', desc: 'Precise & Fast Application', image: 'image6.jpg', category: 'trowel' },
+        { id: 6, name: 'Notched Adhesive Trowel (12")', code: '', price: '₹35', desc: 'Uniform Coverage', image: 'image7.jpg', category: 'trowel' },
+        { id: 7, name: 'Plastic/ABS Float (10")', code: '', price: '₹37', desc: 'Final Concrete Smooth Finish', image: 'image8.jpg', category: 'float' },
+        { id: 8, name: 'Drywall Sander (6")', code: '', price: '₹35', desc: 'Efficient & Dust-Controlled', image: 'image9.jpg', category: 'float' },
+        { id: 9, name: 'Adjustable Frame (Offset)', code: '', price: '₹6', desc: '', image: 'image10.jpg', category: 'roller' },
+        { id: 10, name: 'Putty Knife 8"', code: '', price: '₹28', desc: 'SIZE: 8"', image: 'image11.jpg', category: 'knife' },
+        { id: 11, name: 'Putty Knife 6"', code: '', price: '₹25', desc: 'SIZE: 6"', image: 'image12.jpg', category: 'knife' },
+        { id: 12, name: 'Standard Roller Frame 4"', code: '', price: '₹7', desc: 'Roller Frame Set', image: 'image13.jpg', category: 'roller' },
+        { id: 13, name: 'Standard Roller Frame 2"', code: '', price: '₹6.75', desc: 'Roller Frame Set', image: 'image15.jpg', category: 'roller' }
     ];
 
     // ================= 3. RENDER PRODUCT GRID =================
